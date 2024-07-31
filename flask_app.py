@@ -23,7 +23,7 @@ model = genai.GenerativeModel(
     generation_config=generation_config,
 )
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -58,5 +58,5 @@ def generate():
         'js': js_code
     })
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
