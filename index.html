@@ -339,7 +339,7 @@
 
             function updateTimer() {
                 let elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-                loadingMessage.textContent = It usually takes 15s. Time elapsed: ${elapsed}s;
+                loadingMessage.textContent = `It usually takes 15s. Time elapsed: ${elapsed}s`;
                 requestAnimationFrame(updateTimer);
             }
 

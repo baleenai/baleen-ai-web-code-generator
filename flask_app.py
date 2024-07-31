@@ -40,9 +40,9 @@ def generate():
     response = chat_session.send_message(input_text + " Generate an HTML page with embedded CSS and JavaScript")
 
     # Extract HTML, CSS, and JavaScript using regular expressions
-    html_pattern = re.compile(r'(<html.?>.?</html>)', re.DOTALL)
-    css_pattern = re.compile(r'(<style.?>.?</style>)', re.DOTALL)
-    js_pattern = re.compile(r'(<script.?>.?</script>)', re.DOTALL)
+    html_pattern = re.compile(r'(<html.*?>.*?</html>)', re.DOTALL)
+    css_pattern = re.compile(r'(<style.*?>.*?</style>)', re.DOTALL)
+    js_pattern = re.compile(r'(<script.*?>.*?</script>)', re.DOTALL)
 
     html_match = html_pattern.search(response.text)
     css_match = css_pattern.search(response.text)
