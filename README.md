@@ -37,3 +37,10 @@
 
 ## 📂 Project Structure
 
+/ ├── static/ │ └── styles.css ├── templates/ │ ├── index.html │ └── output.html ├── app.py ├── README.md └── requirements.txt
+
+## 👨‍💻 Author
+Made with ❤️ by Shubham
+
+🔗 Live App: baleen.pythonanywhere.com
+
