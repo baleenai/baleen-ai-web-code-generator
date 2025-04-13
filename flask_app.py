@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, send_from_directory, redirect, url_fo
 import google.generativeai as genai
 
 # Replace this with your actual API key
-api_key = "AIzaSyBjEj0j6P8UZ3Fn18XO2t1Cy16n8piM1Vg"
+api_key = "API_KEY"
 
 # Configure the model with your API key
 genai.configure(api_key=api_key)
